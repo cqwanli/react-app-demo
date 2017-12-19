@@ -1,0 +1,26 @@
+@width: 0.01rem;
+@height: 0.01rem;
+.activity-item{
+  position: relative;
+  width: 332*@width;
+  height: 150*@height;
+  display: inline-block;
+  &:nth-child(odd){
+    margin-right: 22*@width;
+  }
+  img{
+    width: 332*@width;
+    height: 150*@height;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  h5{
+    font-size: 30*@height;
+    color: white;
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 60*@height;
+  }
+}

@@ -1,0 +1,39 @@
+@width: 0.01rem;
+@height: 0.01rem;
+.task-item {
+  height: 140*@height;
+  border-bottom: @height solid #dcdcdc;
+  position: relative;
+  &:last-child{
+    border-bottom: none;
+  }
+  .task-item-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 34*@height;
+    h5 {
+      font-size: 30*@height;
+    }
+    p {
+      font-size: 24*@height;
+      color: #999999;
+    }
+  }
+  .task-item-btn {
+    position: absolute;
+    right: 0;
+    top: 40*@height;
+    vertical-align: top;
+    display: inline-block;
+    text-decoration: none;
+    color: #ee227a;
+    font-size: 30*@height;
+    width: 120*@width;
+    height: 54*@height;
+    line-height: 54*@height;
+    border-radius: 27*@height;
+    border: 1px solid #ee227a;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}

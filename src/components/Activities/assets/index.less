@@ -1,0 +1,50 @@
+@width: 0.01rem;
+@height: 0.01rem;
+.activities {
+  margin-top: 20*@height;
+  .activity-banner {
+    background: white;
+    height: 90*@height;
+    padding: 0 32*@width;
+    box-sizing: border-box;
+    & > img {
+      width: 40*@width;
+      height: 44*@height;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 24*@height;
+    }
+    .activity-msg {
+      font-size: 30*@height;
+      height: 90*@height;
+      line-height: 90*@height;
+      width: 580*@width;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 20*@width;
+      overflow: hidden;
+    }
+    .notice-point {
+      display: inline-block;
+      vertical-align: top;
+      width: 14*@width;
+      height: 14*@height;
+      border-radius: 7*@height;
+      background: #ee227a;
+      margin-top: 38*@height;
+    }
+    .arrow {
+      width: 18*@width;
+      height: 18*@height;
+      border-top: 1px solid #bbbbbb;
+      border-right: 1px solid #bbbbbb;
+      transform: rotate(45deg);
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 36*@height;
+    }
+  }
+  .activities-container{
+    padding: 22*@height 32*@width;
+  }
+}
